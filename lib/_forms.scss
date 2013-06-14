@@ -48,6 +48,7 @@ input,
 button,
 select,
 textarea {
+  -webkit-font-smoothing: antialiased;
   font-family: $baseFontFamily; // And only set font-family here for those that need it (note the missing label element)
 }
 
