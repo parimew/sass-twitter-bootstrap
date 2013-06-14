@@ -49,4 +49,9 @@ task :watch do
   sh "#{SASS_COMMAND} expanded --watch lib/bootstrap.scss:#{BOOTSTRAP_CSS}"
 end
 
+desc "Host the folders to http://localhost:3000"
+task :serve do
+  sh "cd docs/ && python -m SimpleHTTPServer 3000"
+end
+
 task :default => :build
