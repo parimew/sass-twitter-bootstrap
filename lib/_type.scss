@@ -3,8 +3,106 @@
 // --------------------------------------------------
 
 
+// Web Fonts
+// -------------------------
+
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('#{$fontPath}/museosans-100-webfont.eot');
+    src: url('#{$fontPath}/museosans-100-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museosans-100-webfont.woff') format('woff'),
+         url('#{$fontPath}/museosans-100-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museosans-100-webfont.svg#MuseoSans100') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('#{$fontPath}/museosans-300-webfont.eot');
+    src: url('#{$fontPath}/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museosans-300-webfont.woff') format('woff'),
+         url('#{$fontPath}/museosans-300-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museosans-300-webfont.svg#MuseoSans300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('#{$fontPath}/museosans-500-webfont.eot');
+    src: url('#{$fontPath}/museosans-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museosans-500-webfont.woff') format('woff'),
+         url('#{$fontPath}/museosans-500-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museosans-500-webfont.svg#MuseoSans500') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('#{$fontPath}/museosans-500italic-webfont.eot');
+    src: url('#{$fontPath}/museosans-500italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museosans-500italic-webfont.woff') format('woff'),
+         url('#{$fontPath}/museosans-500italic-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museosans-500italic-webfont.svg#MuseoSans500Italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('#{$fontPath}/museosans-700-webfont.eot');
+    src: url('#{$fontPath}/museosans-700-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museosans-700-webfont.woff') format('woff'),
+         url('#{$fontPath}/museosans-700-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museosans-700-webfont.svg#MuseoSans700') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    src: url('#{$fontPath}/museosans-900-webfont.eot');
+    src: url('#{$fontPath}/museosans-900-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museosans-900-webfont.woff') format('woff'),
+         url('#{$fontPath}/museosans-900-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museosans-900-webfont.svg#MuseoSans900') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Museo Slab';
+    src: url('#{$fontPath}/museoslab-500-webfont.eot');
+    src: url('#{$fontPath}/museoslab-500-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museoslab-500-webfont.woff') format('woff'),
+         url('#{$fontPath}/museoslab-500-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museoslab-500-webfont.svg#MuseoSlab500') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Slab';
+    src: url('#{$fontPath}/museoslab-500italic-webfont.eot');
+    src: url('#{$fontPath}/museoslab-500italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$fontPath}/museoslab-500italic-webfont.woff') format('woff'),
+         url('#{$fontPath}/museoslab-500italic-webfont.ttf') format('truetype'),
+         url('#{$fontPath}/museoslab-500italic-webfont.svg#MuseoSlab500Italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
 // Body text
 // -------------------------
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
 
 p {
   margin: 0 0 $baseLineHeight / 2;
