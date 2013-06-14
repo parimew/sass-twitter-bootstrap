@@ -9,25 +9,25 @@
 
 // Grays
 // -------------------------
-$black:                 #000 !default;
-$grayDarker:            #222 !default;
-$grayDark:              #333 !default;
-$gray:                  #555 !default;
-$grayLight:             #999 !default;
+$black:                 #1a1a1a !default;
+$grayDarker:            #202020 !default;
+$grayDark:              #4f4f4f !default;
+$gray:                  #a1a1a1 !default;
+$grayLight:             #4d4d4d !default;
 $grayLighter:           #eee !default;
 $white:                 #fff !default;
 
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb !default;
-$blueDark:              #0064cd !default;
-$green:                 #46a546 !default;
-$red:                   #9d261d !default;
-$yellow:                #ffc40d !default;
-$orange:                #f89406 !default;
-$pink:                  #c3325f !default;
-$purple:                #7a43b6 !default;
+$blue:                  #1dabd3 !default;
+$blueDark:              darken($blue, 15%) !default;
+$green:                 #9ec955 !default;
+$red:                   #e02830 !default;
+$orange:                #fa851b !default;
+$yellow:                lighten($orange, 15%) !default;
+$pink:                  lighten($red, 15%) !default;
+$purple:                #7a43b6 !default; //not custom
 
 
 // Scaffolding
@@ -38,14 +38,16 @@ $textColor:             $grayDark !default;
 
 // Links
 // -------------------------
-$linkColor:             #08c !default;
+$linkColor:             $blue !default;
 $linkColorHover:        darken($linkColor, 15%) !default;
 
 
 // Typography
 // -------------------------
-$sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
+$fontPath:              "../font" !default;
+
+$sansFontFamily:        "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$serifFontFamily:       "Museo Slab", Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
 $baseFontSize:          14px !default;
@@ -53,8 +55,8 @@ $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        20px !default;
 $altFontFamily:         $serifFontFamily !default;
 
-$headingsFontFamily:    inherit !default; // empty to use BS default, $baseFontFamily
-$headingsFontWeight:    bold !default;    // instead of browser default, bold
+$headingsFontFamily:    $serifFontFamily !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:    500 !default;    // instead of browser default, bold
 $headingsColor:         inherit !default; // empty to use BS default, $textColor
 
 
@@ -80,28 +82,28 @@ $borderRadiusSmall:     3px !default;
 $tableBackground:                   transparent !default; // overall background-color
 $tableBackgroundAccent:             #f9f9f9 !default; // for striping
 $tableBackgroundHover:              #f5f5f5 !default; // for hover
-$tableBorder:                       #ddd !default; // table and cell border
+$tableBorder:                       $grayLighter !default; // table and cell border
 
 // Buttons
 // -------------------------
 $btnBackground:                     $white !default;
-$btnBackgroundHighlight:            darken($white, 10%) !default;
-$btnBorder:                         #ccc !default;
+$btnBackgroundHighlight:            $grayLighter !default;
+$btnBorder:                         rgba(#000,.1) !default;
 
-$btnPrimaryBackground:              $linkColor !default;
-$btnPrimaryBackgroundHighlight:     adjust-hue($btnPrimaryBackground, 20%) !default;
+$btnPrimaryBackground:              $blue !default;
+$btnPrimaryBackgroundHighlight:     darken($blue, 10%) !default;
 
-$btnInfoBackground:                 #5bc0de !default;
-$btnInfoBackgroundHighlight:        #2f96b4 !default;
+$btnInfoBackground:                 $yellow !default;
+$btnInfoBackgroundHighlight:        darken($yellow, 10%) !default;
 
-$btnSuccessBackground:              #62c462 !default;
-$btnSuccessBackgroundHighlight:     #51a351 !default;
+$btnSuccessBackground:              $green !default;
+$btnSuccessBackgroundHighlight:     darken($green, 10%) !default;
 
-$btnWarningBackground:              lighten($orange, 15%) !default;
-$btnWarningBackgroundHighlight:     $orange !default;
+$btnWarningBackground:              $orange !default;
+$btnWarningBackgroundHighlight:     darken($orange, 10%) !default;
 
-$btnDangerBackground:               #ee5f5b !default;
-$btnDangerBackgroundHighlight:      #bd362f !default;
+$btnDangerBackground:               $red !default;
+$btnDangerBackgroundHighlight:      darken($red, 10%) !default;
 
 $btnInverseBackground:              #444 !default;
 $btnInverseBackgroundHighlight:     $grayDarker !default;
