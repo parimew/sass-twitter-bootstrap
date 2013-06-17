@@ -13,11 +13,17 @@
   background-color: $warningBackground;
   border: 1px solid $warningBorder;
   @include border-radius($baseBorderRadius);
+  a {
+    text-decoration: underline;
+  }
 }
 .alert,
 .alert h4 {
   // Specified for the h4 to prevent conflicts of changing $headingsColor
   color: $warningText;
+  a {
+    color: $warningText;
+  }
 }
 .alert h4 {
   margin: 0;

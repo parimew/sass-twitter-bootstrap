@@ -674,12 +674,12 @@ cite {
 }
 
 .muted {
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 
 a.muted:hover,
 a.muted:focus {
-  color: #343434;
+  color: #888888;
 }
 
 .text-warning {
@@ -741,7 +741,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-weight: normal;
   line-height: 1;
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 
 h1,
@@ -884,7 +884,7 @@ hr {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #4d4d4d;
+  border-bottom: 1px dotted #a1a1a1;
 }
 
 abbr.initialism {
@@ -906,7 +906,7 @@ blockquote p {
 blockquote small {
   display: block;
   line-height: 20px;
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 blockquote small:before {
   content: '\2014 \00A0';
@@ -1019,7 +1019,7 @@ legend {
 }
 legend small {
   font-size: 15px;
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 
 label,
@@ -1068,7 +1068,7 @@ input[type="color"],
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 20px;
-  color: #a1a1a1;
+  color: #4d4d4d;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -1187,7 +1187,7 @@ input[type="checkbox"]:focus {
 
 .uneditable-input,
 .uneditable-textarea {
-  color: #4d4d4d;
+  color: #a1a1a1;
   background-color: #fcfcfc;
   border-color: #cccccc;
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
@@ -1208,15 +1208,15 @@ input[type="checkbox"]:focus {
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 
 .radio,
@@ -2873,7 +2873,7 @@ table th[class*="span"],
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 
 .dropdown-menu > .disabled > a:hover,
@@ -3607,9 +3607,16 @@ input[type="submit"].btn.btn-mini {
   -moz-border-radius: 4px;
   border-radius: 4px;
 }
+.alert a {
+  text-decoration: underline;
+}
 
 .alert,
 .alert h4 {
+  color: white;
+}
+.alert a,
+.alert h4 a {
   color: white;
 }
 
@@ -3700,7 +3707,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 11px;
   font-weight: bold;
   line-height: 20px;
-  color: #4d4d4d;
+  color: #a1a1a1;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
@@ -3802,7 +3809,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover,
 .nav-tabs > .active > a:focus {
-  color: #a1a1a1;
+  color: #4d4d4d;
   background-color: white;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -3912,8 +3919,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav-tabs .active .dropdown-toggle .caret {
-  border-top-color: #a1a1a1;
-  border-bottom-color: #a1a1a1;
+  border-top-color: #4d4d4d;
+  border-bottom-color: #4d4d4d;
 }
 
 .nav > .dropdown.active > a:hover,
@@ -3926,8 +3933,8 @@ input[type="submit"].btn.btn-mini {
 .nav > li.dropdown.open.active > a:hover,
 .nav > li.dropdown.open.active > a:focus {
   color: white;
-  background-color: #4d4d4d;
-  border-color: #4d4d4d;
+  background-color: #a1a1a1;
+  border-color: #a1a1a1;
 }
 
 .nav li.dropdown.open .caret,
@@ -3942,7 +3949,7 @@ input[type="submit"].btn.btn-mini {
 
 .tabs-stacked .open > a:hover,
 .tabs-stacked .open > a:focus {
-  border-color: #4d4d4d;
+  border-color: #a1a1a1;
 }
 
 .tabbable {
@@ -4065,7 +4072,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav > .disabled > a {
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 
 .nav > .disabled > a:hover,
@@ -4586,7 +4593,7 @@ input[type="submit"].btn.btn-mini {
   color: #ccc;
 }
 .breadcrumb .active {
-  color: #4d4d4d;
+  color: #a1a1a1;
 }
 
 .pagination {
@@ -4632,7 +4639,7 @@ input[type="submit"].btn.btn-mini {
 
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  color: #4d4d4d;
+  color: #a1a1a1;
   cursor: default;
 }
 
@@ -4640,7 +4647,7 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > .disabled > a,
 .pagination ul > .disabled > a:hover,
 .pagination ul > .disabled > a:focus {
-  color: #4d4d4d;
+  color: #a1a1a1;
   background-color: transparent;
   cursor: default;
 }
@@ -4783,7 +4790,7 @@ input[type="submit"].btn.btn-mini {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #4d4d4d;
+  color: #a1a1a1;
   background-color: #fff;
   cursor: default;
 }
@@ -5167,7 +5174,7 @@ a.thumbnail:focus {
 
 .thumbnail .caption {
   padding: 9px;
-  color: #a1a1a1;
+  color: #4d4d4d;
 }
 
 .media,
@@ -5217,8 +5224,7 @@ a.thumbnail:focus {
   color: white;
   vertical-align: baseline;
   white-space: nowrap;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #4d4d4d;
+  background-color: #a1a1a1;
 }
 
 .label {
@@ -5247,11 +5253,11 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 .label-important {
-  background-color: white;
+  background-color: #e02830;
 }
 
 .label-important[href] {
-  background-color: #e6e6e6;
+  background-color: #ba1b22;
 }
 
 .label-warning {
@@ -5263,19 +5269,19 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 .label-success {
-  background-color: white;
+  background-color: #9ec955;
 }
 
 .label-success[href] {
-  background-color: #e6e6e6;
+  background-color: #85b239;
 }
 
 .label-info {
-  background-color: white;
+  background-color: #1dabd3;
 }
 
 .label-info[href] {
-  background-color: #e6e6e6;
+  background-color: #1787a6;
 }
 
 .label-inverse {
@@ -5287,11 +5293,11 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 .badge-important {
-  background-color: white;
+  background-color: #e02830;
 }
 
 .badge-important[href] {
-  background-color: #e6e6e6;
+  background-color: #ba1b22;
 }
 
 .badge-warning {
@@ -5303,19 +5309,19 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 }
 
 .badge-success {
-  background-color: white;
+  background-color: #9ec955;
 }
 
 .badge-success[href] {
-  background-color: #e6e6e6;
+  background-color: #85b239;
 }
 
 .badge-info {
-  background-color: white;
+  background-color: #1dabd3;
 }
 
 .badge-info[href] {
-  background-color: #e6e6e6;
+  background-color: #1787a6;
 }
 
 .badge-inverse {
