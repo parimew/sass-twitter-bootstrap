@@ -72,7 +72,7 @@ $paddingLarge:          11px 19px !default; // 44px
 $paddingSmall:          2px 10px !default;  // 26px
 $paddingMini:           0px 6px !default;   // 22px
 
-$baseBorderRadius:      4px !default;
+$baseBorderRadius:      0px !default;
 $borderRadiusLarge:     6px !default;
 $borderRadiusSmall:     3px !default;
 
@@ -88,7 +88,7 @@ $tableBorder:                       $grayLighter !default; // table and cell bor
 // -------------------------
 $btnBackground:                     $white !default;
 $btnBackgroundHighlight:            $grayLighter !default;
-$btnBorder:                         rgba(#000,.1) !default;
+$btnBorder:                         rgba(#000,0) !default;
 
 $btnPrimaryBackground:              $blue !default;
 $btnPrimaryBackgroundHighlight:     darken($blue, 10%) !default;
@@ -112,7 +112,7 @@ $btnInverseBackgroundHighlight:     $grayDarker !default;
 // Forms
 // -------------------------
 $inputBackground:               $white !default;
-$inputBorder:                   #ccc !default;
+$inputBorder:                   rgba(#000,0) !default;
 $inputBorderRadius:             $baseBorderRadius !default;
 $inputDisabledBackground:       $grayLighter !default;
 $formActionsBackground:         #f5f5f5 !default;
@@ -164,7 +164,7 @@ $placeholderText:         $grayLight !default;
 
 // Hr border color
 // -------------------------
-$hrBorder:                $grayLighter !default;
+$hrBorder:                rgba(#000,0.1) !default;
 
 
 // Horizontal forms & lists
@@ -174,7 +174,7 @@ $horizontalComponentOffset:       180px !default;
 
 // Wells
 // -------------------------
-$wellBackground:                  #f5f5f5 !default;
+$wellBackground:                  $white !default;
 
 
 // Navbar
@@ -185,7 +185,7 @@ $navbarCollapseDesktopWidth:      $navbarCollapseWidth + 1;
 $navbarHeight:                    40px !default;
 $navbarBackgroundHighlight:       $white !default;
 $navbarBackground:                $white !default;
-$navbarBorder:                    darken($navbarBackground, 12%) !default;
+$navbarBorder:                    transparent !default;
 
 $navbarText:                      $grayDark !default;
 $navbarLinkColor:                 $grayDark !default;

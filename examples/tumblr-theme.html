@@ -1,4 +1,3 @@
-            text-decoration: none;
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -910,8 +909,8 @@
         hr {
           margin: 20px 0;
           border: 0;
-          border-top: 1px solid #eeeeee;
-          border-bottom: 1px solid white;
+          border-top: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         abbr[title],
@@ -1008,9 +1007,9 @@
           background-color: #f5f5f5;
           border: 1px solid #ccc;
           border: 1px solid rgba(0, 0, 0, 0.15);
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
         pre.prettyprint {
           margin-bottom: 20px;
@@ -1102,9 +1101,9 @@
           font-size: 14px;
           line-height: 20px;
           color: #4d4d4d;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
           vertical-align: middle;
         }
 
@@ -1135,10 +1134,7 @@
         input[type="color"],
         .uneditable-input {
           background-color: white;
-          border: 1px solid #cccccc;
-          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          border: 1px solid rgba(0, 0, 0, 0);
           -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
           -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
           -o-transition: border linear 0.2s, box-shadow linear 0.2s;
@@ -1160,13 +1156,10 @@
         input[type="tel"]:focus,
         input[type="color"]:focus,
         .uneditable-input:focus {
-          border-color: rgba(82, 168, 236, 0.8);
+          background-color: #f2fbfd;
           outline: 0;
           outline: thin dotted \9;
           /* IE6-9 */
-          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-          -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
         }
 
         input[type="radio"],
@@ -1200,7 +1193,7 @@
 
         select {
           width: 220px;
-          border: 1px solid #cccccc;
+          border: 1px solid rgba(0, 0, 0, 0);
           background-color: white;
         }
 
@@ -1222,7 +1215,7 @@
         .uneditable-textarea {
           color: #a1a1a1;
           background-color: #fcfcfc;
-          border-color: #cccccc;
+          border-color: rgba(0, 0, 0, 0);
           -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
           -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
@@ -1673,9 +1666,9 @@
           margin-bottom: 0;
           *margin-left: 0;
           vertical-align: top;
-          -webkit-border-radius: 0 4px 4px 0;
-          -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
+          -webkit-border-radius: 0 0px 0px 0;
+          -moz-border-radius: 0 0px 0px 0;
+          border-radius: 0 0px 0px 0;
         }
         .input-append input:focus,
         .input-append select:focus,
@@ -1723,24 +1716,24 @@
         }
         .input-prepend .add-on:first-child,
         .input-prepend .btn:first-child {
-          -webkit-border-radius: 4px 0 0 4px;
-          -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
+          -webkit-border-radius: 0px 0 0 0px;
+          -moz-border-radius: 0px 0 0 0px;
+          border-radius: 0px 0 0 0px;
         }
 
         .input-append input,
         .input-append select,
         .input-append .uneditable-input {
-          -webkit-border-radius: 4px 0 0 4px;
-          -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
+          -webkit-border-radius: 0px 0 0 0px;
+          -moz-border-radius: 0px 0 0 0px;
+          border-radius: 0px 0 0 0px;
         }
         .input-append input + .btn-group .btn:last-child,
         .input-append select + .btn-group .btn:last-child,
         .input-append .uneditable-input + .btn-group .btn:last-child {
-          -webkit-border-radius: 0 4px 4px 0;
-          -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
+          -webkit-border-radius: 0 0px 0px 0;
+          -moz-border-radius: 0 0px 0px 0;
+          border-radius: 0 0px 0px 0;
         }
         .input-append .add-on,
         .input-append .btn,
@@ -1750,9 +1743,9 @@
         .input-append .add-on:last-child,
         .input-append .btn:last-child,
         .input-append .btn-group:last-child > .dropdown-toggle {
-          -webkit-border-radius: 0 4px 4px 0;
-          -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
+          -webkit-border-radius: 0 0px 0px 0;
+          -moz-border-radius: 0 0px 0px 0;
+          border-radius: 0 0px 0px 0;
         }
 
         .input-prepend.input-append input,
@@ -1765,23 +1758,23 @@
         .input-prepend.input-append input + .btn-group .btn,
         .input-prepend.input-append select + .btn-group .btn,
         .input-prepend.input-append .uneditable-input + .btn-group .btn {
-          -webkit-border-radius: 0 4px 4px 0;
-          -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
+          -webkit-border-radius: 0 0px 0px 0;
+          -moz-border-radius: 0 0px 0px 0;
+          border-radius: 0 0px 0px 0;
         }
         .input-prepend.input-append .add-on:first-child,
         .input-prepend.input-append .btn:first-child {
           margin-right: -1px;
-          -webkit-border-radius: 4px 0 0 4px;
-          -moz-border-radius: 4px 0 0 4px;
-          border-radius: 4px 0 0 4px;
+          -webkit-border-radius: 0px 0 0 0px;
+          -moz-border-radius: 0px 0 0 0px;
+          border-radius: 0px 0 0 0px;
         }
         .input-prepend.input-append .add-on:last-child,
         .input-prepend.input-append .btn:last-child {
           margin-left: -1px;
-          -webkit-border-radius: 0 4px 4px 0;
-          -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
+          -webkit-border-radius: 0 0px 0px 0;
+          -moz-border-radius: 0 0px 0px 0;
+          border-radius: 0 0px 0px 0;
         }
         .input-prepend.input-append .btn-group:first-child {
           margin-left: 0;
@@ -1998,9 +1991,9 @@
           border-collapse: separate;
           *border-collapse: collapse;
           border-left: 0;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
         .table-bordered th,
         .table-bordered td {
@@ -2020,34 +2013,34 @@
         .table-bordered thead:first-child tr:first-child > th:first-child,
         .table-bordered tbody:first-child tr:first-child > td:first-child,
         .table-bordered tbody:first-child tr:first-child > th:first-child {
-          -webkit-border-top-left-radius: 4px;
-          -moz-border-radius-topleft: 4px;
-          border-top-left-radius: 4px;
+          -webkit-border-top-left-radius: 0px;
+          -moz-border-radius-topleft: 0px;
+          border-top-left-radius: 0px;
         }
         .table-bordered thead:first-child tr:first-child > th:last-child,
         .table-bordered tbody:first-child tr:first-child > td:last-child,
         .table-bordered tbody:first-child tr:first-child > th:last-child {
-          -webkit-border-top-right-radius: 4px;
-          -moz-border-radius-topright: 4px;
-          border-top-right-radius: 4px;
+          -webkit-border-top-right-radius: 0px;
+          -moz-border-radius-topright: 0px;
+          border-top-right-radius: 0px;
         }
         .table-bordered thead:last-child tr:last-child > th:first-child,
         .table-bordered tbody:last-child tr:last-child > td:first-child,
         .table-bordered tbody:last-child tr:last-child > th:first-child,
         .table-bordered tfoot:last-child tr:last-child > td:first-child,
         .table-bordered tfoot:last-child tr:last-child > th:first-child {
-          -webkit-border-bottom-left-radius: 4px;
-          -moz-border-radius-bottomleft: 4px;
-          border-bottom-left-radius: 4px;
+          -webkit-border-bottom-left-radius: 0px;
+          -moz-border-radius-bottomleft: 0px;
+          border-bottom-left-radius: 0px;
         }
         .table-bordered thead:last-child tr:last-child > th:last-child,
         .table-bordered tbody:last-child tr:last-child > td:last-child,
         .table-bordered tbody:last-child tr:last-child > th:last-child,
         .table-bordered tfoot:last-child tr:last-child > td:last-child,
         .table-bordered tfoot:last-child tr:last-child > th:last-child {
-          -webkit-border-bottom-right-radius: 4px;
-          -moz-border-radius-bottomright: 4px;
-          border-bottom-right-radius: 4px;
+          -webkit-border-bottom-right-radius: 0px;
+          -moz-border-radius-bottomright: 0px;
+          border-bottom-right-radius: 0px;
         }
         .table-bordered tfoot + tbody:last-child tr:last-child td:first-child {
           -webkit-border-bottom-left-radius: 0;
@@ -2063,17 +2056,17 @@
         .table-bordered caption + tbody tr:first-child td:first-child,
         .table-bordered colgroup + thead tr:first-child th:first-child,
         .table-bordered colgroup + tbody tr:first-child td:first-child {
-          -webkit-border-top-left-radius: 4px;
-          -moz-border-radius-topleft: 4px;
-          border-top-left-radius: 4px;
+          -webkit-border-top-left-radius: 0px;
+          -moz-border-radius-topleft: 0px;
+          border-top-left-radius: 0px;
         }
         .table-bordered caption + thead tr:first-child th:last-child,
         .table-bordered caption + tbody tr:first-child td:last-child,
         .table-bordered colgroup + thead tr:first-child th:last-child,
         .table-bordered colgroup + tbody tr:first-child td:last-child {
-          -webkit-border-top-right-radius: 4px;
-          -moz-border-radius-topright: 4px;
-          border-top-right-radius: 4px;
+          -webkit-border-top-right-radius: 0px;
+          -moz-border-radius-topright: 0px;
+          border-top-right-radius: 0px;
         }
 
         .table-striped tbody > tr:nth-child(odd) > td,
@@ -3017,23 +3010,19 @@
         .typeahead {
           z-index: 1051;
           margin-top: 2px;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
 
         .well {
           min-height: 20px;
           padding: 19px;
           margin-bottom: 20px;
-          background-color: whitesmoke;
-          border: 1px solid #e3e3e3;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
-          -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          background-color: white;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
         .well blockquote {
           border-color: #ddd;
@@ -3120,11 +3109,11 @@
           color: #4f4f4f;
           text-transform: uppercase;
           filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-          border: 1px solid rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba(0, 0, 0, 0);
           *border: 0;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
           *margin-left: .3em;
         }
         .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
@@ -3447,22 +3436,22 @@
 
         .btn-group > .btn:first-child {
           margin-left: 0;
-          -webkit-border-top-left-radius: 4px;
-          -moz-border-radius-topleft: 4px;
-          border-top-left-radius: 4px;
-          -webkit-border-bottom-left-radius: 4px;
-          -moz-border-radius-bottomleft: 4px;
-          border-bottom-left-radius: 4px;
+          -webkit-border-top-left-radius: 0px;
+          -moz-border-radius-topleft: 0px;
+          border-top-left-radius: 0px;
+          -webkit-border-bottom-left-radius: 0px;
+          -moz-border-radius-bottomleft: 0px;
+          border-bottom-left-radius: 0px;
         }
 
         .btn-group > .btn:last-child,
         .btn-group > .dropdown-toggle {
-          -webkit-border-top-right-radius: 4px;
-          -moz-border-radius-topright: 4px;
-          border-top-right-radius: 4px;
-          -webkit-border-bottom-right-radius: 4px;
-          -moz-border-radius-bottomright: 4px;
-          border-bottom-right-radius: 4px;
+          -webkit-border-top-right-radius: 0px;
+          -moz-border-radius-topright: 0px;
+          border-top-right-radius: 0px;
+          -webkit-border-bottom-right-radius: 0px;
+          -moz-border-radius-bottomright: 0px;
+          border-bottom-right-radius: 0px;
         }
 
         .btn-group > .btn.large:first-child {
@@ -3607,15 +3596,15 @@
         }
 
         .btn-group-vertical > .btn:first-child {
-          -webkit-border-radius: 4px 4px 0 0;
-          -moz-border-radius: 4px 4px 0 0;
-          border-radius: 4px 4px 0 0;
+          -webkit-border-radius: 0px 0px 0 0;
+          -moz-border-radius: 0px 0px 0 0;
+          border-radius: 0px 0px 0 0;
         }
 
         .btn-group-vertical > .btn:last-child {
-          -webkit-border-radius: 0 0 4px 4px;
-          -moz-border-radius: 0 0 4px 4px;
-          border-radius: 0 0 4px 4px;
+          -webkit-border-radius: 0 0 0px 0px;
+          -moz-border-radius: 0 0 0px 0px;
+          border-radius: 0 0 0px 0px;
         }
 
         .btn-group-vertical > .btn-large:first-child {
@@ -3636,9 +3625,9 @@
           text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
           background-color: #fa851b;
           border: 1px solid #fa550c;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
         .alert a {
           text-decoration: underline;
@@ -4127,13 +4116,10 @@
           padding-left: 20px;
           padding-right: 20px;
           background-color: white;
-          border: 1px solid #e0e0e0;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
-          -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-          -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+          border: 1px solid transparent;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
           *zoom: 1;
         }
         .navbar-inner:before, .navbar-inner:after {
@@ -4304,20 +4290,8 @@
           top: 0;
         }
 
-        .navbar-fixed-top .navbar-inner,
-        .navbar-static-top .navbar-inner {
-          -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-          -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-        }
-
         .navbar-fixed-bottom {
           bottom: 0;
-        }
-        .navbar-fixed-bottom .navbar-inner {
-          -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-          -moz-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
         }
 
         .navbar .nav {
@@ -4342,6 +4316,7 @@
           padding: 10px 15px 10px;
           color: #4f4f4f;
           text-decoration: none;
+          text-transform: uppercase;
         }
 
         .navbar .nav .dropdown-toggle .caret {
@@ -4610,9 +4585,9 @@
           margin: 0 0 20px;
           list-style: none;
           background-color: #f5f5f5;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
         .breadcrumb > li {
           display: inline-block;
@@ -4640,9 +4615,9 @@
           *zoom: 1;
           margin-left: 0;
           margin-bottom: 0;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
           -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
           -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -4688,22 +4663,22 @@
         .pagination ul > li:first-child > a,
         .pagination ul > li:first-child > span {
           border-left-width: 1px;
-          -webkit-border-top-left-radius: 4px;
-          -moz-border-radius-topleft: 4px;
-          border-top-left-radius: 4px;
-          -webkit-border-bottom-left-radius: 4px;
-          -moz-border-radius-bottomleft: 4px;
-          border-bottom-left-radius: 4px;
+          -webkit-border-top-left-radius: 0px;
+          -moz-border-radius-topleft: 0px;
+          border-top-left-radius: 0px;
+          -webkit-border-bottom-left-radius: 0px;
+          -moz-border-radius-bottomleft: 0px;
+          border-bottom-left-radius: 0px;
         }
 
         .pagination ul > li:last-child > a,
         .pagination ul > li:last-child > span {
-          -webkit-border-top-right-radius: 4px;
-          -moz-border-radius-topright: 4px;
-          border-top-right-radius: 4px;
-          -webkit-border-bottom-right-radius: 4px;
-          -moz-border-radius-bottomright: 4px;
-          border-bottom-right-radius: 4px;
+          -webkit-border-top-right-radius: 0px;
+          -moz-border-radius-topright: 0px;
+          border-top-right-radius: 0px;
+          -webkit-border-bottom-right-radius: 0px;
+          -moz-border-radius-bottomright: 0px;
+          border-bottom-right-radius: 0px;
         }
 
         .pagination-centered {
@@ -4975,9 +4950,9 @@
           text-align: center;
           text-decoration: none;
           background-color: black;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
 
         .tooltip-arrow {
@@ -5178,9 +5153,9 @@
           padding: 4px;
           line-height: 20px;
           border: 1px solid #ddd;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
           -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
           -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
@@ -5441,9 +5416,9 @@
           -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
           -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
 
         .progress .bar {
@@ -5588,9 +5563,9 @@
         .accordion-group {
           margin-bottom: 2px;
           border: 1px solid #e5e5e5;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
+          -webkit-border-radius: 0px;
+          -moz-border-radius: 0px;
+          border-radius: 0px;
         }
 
         .accordion-heading {
@@ -5821,6 +5796,9 @@
           box-sizing: border-box;
         }
 
+    </style>
+    
+    <style type="text/css">
         /*
          * Bootstrap Responsive v2.3.2
          *
@@ -7057,7 +7035,9 @@
             overflow: visible !important;
           }
         }
+
     </style>
+    
     <style type="text/css">
         article {
           margin-bottom: 30px;
@@ -7065,7 +7045,6 @@
 
         iframe {
           width: 100%;
-          max-width: 500px;
         }
 
         body {
@@ -7073,14 +7052,32 @@
           background-color: #eee;
         }
 
-        @media (max-width: 979px) {
-          /* Remove any padding from the body */
-          body {
-            padding-top: 0;
-          }
-          .navbar-fixed-top {
-            margin-bottom: 0;
-          }
+        .jumbotron {
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+        .jumbotron h1 {
+            background-color: #9ec955;
+            background-color: rgba(158, 201, 85, 0.5);
+            display: inline;
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: 1.1;
+        }
+
+        @media (min-width: 768px) and (max-width: 979px) {
+            .jumbotron {
+                margin-top: -20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .jumbotron {
+                padding: 40px 20px;
+                margin-top: -20px;
+                margin-left: -20px;
+                margin-right: -20px;
+            }
         }
 
         #tumblr_controls {
@@ -7088,8 +7085,18 @@
           bottom: 0 !important;
         }
 
-        .date,
-        .date:hover {
+        .navbar .brand-logo {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .navbar .brand-logo svg {
+            height: 30px;
+        }
+        
+        .date-calendar,
+        .date-calendar:hover {
             display: block;
             text-decoration: none;
             background-color: #fff;
@@ -7097,7 +7104,7 @@
             text-transform: uppercase;
             width: 100%;
             max-width: 48px;
-            float: right;
+            float: left;
             margin-bottom: 10px;
         }
         .date-day,
@@ -7114,6 +7121,10 @@
             font-size: 12px;
             line-height: 16px;
         }
+
+        .tag-separator:last-child {
+            display: none;
+        }
     </style>
     <style type="text/css">{CustomCSS}</style>
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
@@ -7122,7 +7133,28 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand" href="/">{Title}</a>
+                <!-- <a class="brand" href="/">{Title}</a> -->
+                <a class="brand brand-logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         width="93.995px" height="24.001px" viewBox="0 0 93.995 24.001" enable-background="new 0 0 93.995 24.001" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path fill="#1dabd3" d="M24.349,0.004c-1.358,0-2.458,1.074-2.458,2.398v16.666c-5.978-0.459-8.962-2.779-13.692-8.155l7.19-6.788
+                                c0.976-0.921,1.001-2.44,0.057-3.391c-0.944-0.952-2.5-0.977-3.475-0.056L4.917,7.337V2.419c0-1.325-1.102-2.398-2.458-2.398
+                                C1.1,0.021,0,1.094,0,2.419v19.052c0,1.324,1.1,2.395,2.458,2.395c1.357,0,2.458-1.07,2.458-2.395v-6.927
+                                c2.292,2.575,4.535,4.803,7.096,6.383c3.386,2.091,7.19,3.024,12.337,3.024c1.357,0,2.458-1.074,2.458-2.398V2.402
+                                C26.808,1.078,25.707,0.004,24.349,0.004z M93.76,20.577L84.465,1.375C84.059,0.535,83.194,0,82.242,0
+                                c-0.951,0-1.816,0.535-2.223,1.375l-8.613,17.796c-5.517-0.249-8.59-1.905-12.082-5.389c1.652-1.473,2.666-3.587,2.666-5.859
+                                C61.99,3.555,58.348,0,53.869,0c-3.206,0-6.119,1.845-7.423,4.7c-0.004,0.007-0.006,0.013-0.009,0.02l-4.854,10.885L35.087,1.426
+                                c-0.554-1.209-2.007-1.751-3.248-1.211c-1.239,0.54-1.795,1.959-1.241,3.168l8.771,19.144c0.397,0.865,1.276,1.424,2.256,1.418
+                                c0.975-0.004,1.854-0.569,2.242-1.44l7.074-15.86c0.517-1.124,1.664-1.848,2.928-1.848c1.768,0,3.204,1.402,3.204,3.126
+                                c0,1.38-0.947,2.614-2.302,3c-0.807,0.23-1.436,0.846-1.671,1.63c-0.233,0.787-0.042,1.635,0.512,2.251
+                                C59.084,20.903,63.576,24,72.949,24c0.951,0,1.816-0.535,2.224-1.375l7.069-14.609l7.07,14.609
+                                c0.42,0.868,1.303,1.376,2.225,1.376c0.352,0,0.709-0.074,1.048-0.229C93.814,23.205,94.338,21.775,93.76,20.577z"/>
+                        </g>
+                    </g>
+                    </svg>
+                </a>
                 <div class="navbar-form pull-right">
                     <a class="btn btn-warning" type="submit" href="https://www.kivra.com/login">Logga in</a>
                     <a class="btn btn-warning" type="submit" href="https://www.kivra.com/registration">Aktivera</a>
@@ -7137,14 +7169,14 @@
             </div>
         </div>
     </div>
-    <header class="jumbotron subhead" id="overview" style="{block:IfHeaderImage}background-image: url('{image:Header}'); background-size: cover; background-position: center bottom; min-height: 180px; color: #fff;{/block:IfHeaderImage} padding: 30px 0; margin-bottom: 30px;">
+    <header class="jumbotron subhead" id="overview" style="{block:IfHeaderImage}background-image: url('{image:Header}'); background-size: cover; background-position: center bottom; min-height: 180px; color: #fff;{/block:IfHeaderImage}">
         <div class="container">
-            <p class="lead">{Description}</p>
+            <h1>{Description}</h1>            
         </div>
     </header>
     <div class="container">
         <div class="row">
-            <div class="span9 pull-left">
+            <div class="span8 pull-left">
             
                 {block:SearchPage}
                     {block:SearchResults}
@@ -7159,23 +7191,27 @@
                 {block:Posts}
                     <article>
                         <div class="row-fluid">
-                            <div class="span2">
+                            <div class="span1">
                                 {block:Date}
-                                    <a class="date" href="{Permalink}">
+                                    <a href="{Permalink}">
+
                                         {block:Reblog}
                                             {lang:Reblogged TimeAgo from ReblogParentName} {block:RebloggedFromReblog}(<span style="text-transform:lowercase;">{lang:Originally from ReblogRootName}</span>){/block:RebloggedFromReblog}
                                         {/block:Reblog}
                                         
                                         {block:NotReblog}
-                                            <div class="date-day">{DayOfMonthWithZero}</div>
-                                            <div class="date-month">{ShortMonth}</div>
+                                            <date class="date-calendar" datetime="{Timestamp}">
+                                                <div class="date-day">{DayOfMonthWithZero}</div>
+                                                <div class="date-month">{ShortMonth}</div>
+                                            </date>
                                         {/block:NotReblog}
+
                                         <div class="notes">{block:NoteCount}{NoteCountWithLabel}{/block:NoteCount} {block:IfDisqusShortname}{block:NoteCount}&bull;{/block:NoteCount} <a href="{Permalink}#disqus_thread">{lang:View comments}</a>{/block:IfDisqusShortname}</div>
                                     </a>
                                 {/block:Date}
                                 <div class="clearfix"></div>
                             </div>
-                            <div class="span10">
+                            <div class="span11">
                                 
                                 {block:Photo}
                                     {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
@@ -7257,13 +7293,15 @@
                                     {block:Description}<div class="copy">{Description}</div>{/block:Description}
                                 {/block:Link}
                                 
+                                <hr />
+
                                 <div class="footer {block:ContentSource}with_source_url{/block:ContentSource}" style="
                                     display:none;
                                     {block:IfShowTags}{block:HasTags}display:block;{/block:HasTags}{/block:IfShowTags}
                                     {block:ContentSource}display:block;{/block:ContentSource}
                                 ">
                                     {block:IfShowTags}
-                                        {block:HasTags}<div class="tags">{lang:Tagged}: {block:Tags}<a class="label" href="{TagURL}">{Tag}</a> {/block:Tags}</div>{/block:HasTags}
+                                        {block:HasTags}<div class="tags"><small><!-- {lang:Tagged}:  -->{block:Tags}<a href="{TagURL}">#{Tag}</a><span class="tag-separator">, </span>{/block:Tags}</small></div>{/block:HasTags}
                                     {/block:IfShowTags}
                                     
                                     {block:ContentSource}
@@ -7320,71 +7358,115 @@
                     </section>
                 {/block:Pagination}
             </div>
-            <div class="span3 pull-right">
+            <div class="span4 pull-right">
+
                 <!-- <section id="avatar">
                     <a href="/"><img class="img-rounded" src="{PortraitURL-128}" /></a>
                     <hr />
-                </section>
- -->
+                </section> -->
+
                 <section id="search">
-                    <form action="/search" method="get" class="form-search" id="search-form">
-                        <div class="input-append">
+                    <form action="/search" method="get" class="form" id="search-form">
+                        <!-- <div class="input-append"> -->
                             <input type="hidden" name="t" value="{Name}" />
                             <input type="hidden" name="scope" value="all_of_tumblr" />
-                            <input type="text" name="q" class="input-small search-query" value="{SearchQuery}" />
-                            <input type="submit" value="{lang:Search}" class="btn" />
-                        </div>
+                            <input type="text" name="q" class="input-block-level" value="{SearchQuery}" placeholder="{lang:Search}" />
+                            <!-- <button class="btn" type="submit">{lang:Search}</button> -->
+                        <!-- </div> -->
                     </form>
-                    <hr />
                 </section>
 
-                <section id="pages">
-                    <ul class="nav nav-pills nav-stacked">
-                        {block:AskEnabled}<li><a href="/ask" class="page">{AskLabel}</a></li>{/block:AskEnabled}
-                        {block:SubmissionsEnabled}<li><a href="/submit" class="page">{SubmitLabel}</a></li>{/block:SubmissionsEnabled}
-                        {block:Pages}<li><a href="{URL}" class="page">{Label}</a></li>{/block:Pages}
-                    </ul>
-                    <hr />
-                </section>
-                
-                <section id="follow">
-                    <a class="btn" href="http://www.tumblr.com/follow/{Name}">{lang:Follow on Tumblr}</a>
-                    <hr />
-                </section>
-                
-                
-                {block:Twitter}
-                <section id="twitterwrapper" style="display:none;">
-                    <h2><a href="http://twitter.com/{TwitterUsername}" style="text-decoration:none;">{lang:Latest Tweets}</a></h2>
-                    <div id="tweetcontainer"></div>
-                    <script type="text/javascript">
-                        function recent_tweets(data) {
-                            document.getElementById("twitterwrapper").style.display = "block";
-                            for(i = 0; i < data.length; i++) {
-                                document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/{TwitterUsername}/status/' + (data[i].id_str ? data[i].id_str : data[i].id) + '"><div class="content">' + data[i].text + '</div></a>';
+                <div class="well">
+
+                    {block:AskEnabled}
+                    <section id="ask">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="/ask" class="page">{AskLabel}</a></li>
+                        </ul>
+                        <hr />
+                    </section>
+                    {/block:AskEnabled}
+
+                    {block:SubmissionsEnabled}
+                    <section id="submit">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="/submit" class="page">{SubmitLabel}</a></li>
+                        </ul>
+                        <hr />
+                    </section>
+                    {/block:SubmissionsEnabled}
+
+                    {block:HasPages}
+                    <section id="pages">
+                        <ul class="nav nav-pills nav-stacked">
+                            {block:Pages}<li><a href="{URL}" class="page">{Label}</a></li>{/block:Pages}
+                        </ul>
+                        <hr />
+                    </section>
+                    {/block:HasPages}
+
+                    <h3>Följ oss</h3>
+
+                    <!-- <section id="follow">
+                        <a class="btn btn-primary" href="http://www.tumblr.com/follow/{Name}">{lang:Follow on Tumblr}</a>
+                        <hr />
+                    </section> -->
+
+                    <section id="facebook">
+                        <div class="fb-like-box" data-href="https://www.facebook.com/KivraHQ" data-show-faces="true" data-stream="false" data-show-border="false" data-header="false"></div>
+                        <style type="text/css">
+                            .fb-like-box,
+                            .fb-like-box > span,
+                            .fb-like-box iframe[style] {
+                                width: 100% !important;
+                                min-height: 180px;
                             }
-                        }
-                    </script>
-                </section>
-                {/block:Twitter}
-                
-                {block:IfShowPeopleIFollow}
-                    {block:Following}
-                        <div class="heading" id="following">{lang:Following}</div>
-                        <div class="content" id="following-avatars">
-                            {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" /></a>{/block:Followed}
-                        </div>
-                    {/block:Following}
-                {/block:IfShowPeopleIFollow}
-                
-                <section id="button">
-                    <ul class="nav nav-pills nav-stacked">
-                        <li><a href="{RSS}">{lang:RSS feed}</a></li>
-                        <li><a href="/random">{lang:Random}</a></li>
-                        <li><a href="/archive">{lang:Archive}</a></li>
-                        <li><a href="/mobile">{lang:Mobile}</a></li>
-                    </ul>
-                </section>
+                        </style>
+                        <hr />
+                    </section>
+
+                    <section id="twitter">
+                        <a class="twitter-timeline" href="https://twitter.com/KivraHq" data-widget-id="346910869688573952">Tweets by @KivraHq</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <hr />
+                    </section>
+                      
+                      
+                    {block:Twitter}
+                    <section id="twitterwrapper">
+                        <h2><a href="http://twitter.com/KivraHq" style="text-decoration:none;">{lang:Latest Tweets}</a></h2>
+                        <div id="tweetcontainer"></div>
+                        <script type="text/javascript">
+                            function recent_tweets(data) {
+                                document.getElementById("twitterwrapper").style.display = "block";
+                                for(i = 0; i < data.length; i++) {
+                                    document.getElementById("tweetcontainer").innerHTML = document.getElementById("tweetcontainer").innerHTML + '<a href="http://twitter.com/{TwitterUsername}/status/' + (data[i].id_str ? data[i].id_str : data[i].id) + '"><div class="content">' + data[i].text + '</div></a>';
+                                }
+                            }
+                        </script>
+                    </section>
+                    {/block:Twitter}
+                      
+                    {block:IfShowPeopleIFollow}
+                        {block:Following}
+                            <div class="heading" id="following">{lang:Following}</div>
+                            <div class="content" id="following-avatars">
+                                {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" /></a>{/block:Followed}
+                            </div>
+                        {/block:Following}
+                    {/block:IfShowPeopleIFollow}
+                </div>
+                <div class="well">
+                    <section id="button">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="{RSS}">{lang:RSS feed}</a></li>
+                            <li><a href="/random">{lang:Random}</a></li>
+                            <li><a href="/archive">{lang:Archive}</a></li>
+                            <li><a href="/mobile">{lang:Mobile}</a></li>
+                        </ul>
+                    </section>
+                  
+                </div>
             </div>
         </div>
     </div>
@@ -7396,7 +7478,16 @@
         
         <div class="clear"></div>
     </div>
-    
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/sv_SE/all.js#xfbml=1&appId=183669124930";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     {block:Twitter}
         <script type="text/javascript" src="/tweets.js"></script>
     {/block:Twitter}
